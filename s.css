@@ -1,0 +1,71 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Styling the display */
+#display {
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the table for buttons */
+table {
+    border-spacing: 10px;
+    margin: 0 auto;
+}
+
+/* Styling individual buttons */
+button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Active button effect */
+button:active {
+    background-color: #004085;
+    transform: scale(0.95);
+}
+
+/* Special styling for "C" and "=" buttons */
+button[onclick="clear()"], button[onclick="calc()"] {
+    background-color: #28A745;
+}
+
+button[onclick="clear()"]:hover, button[onclick="calc()"]:hover {
+    background-color: #218838;
+}
+
+button[onclick="clear()"]:active, button[onclick="calc()"]:active {
+    background-color: #1e7e34;
+}
